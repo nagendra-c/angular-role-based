@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "user": "nagebdra",
+      "password": "nmjkiug",
+      "select": "User",
+      "id": 2
+    },
+    {
+      "user": "dileep",
+      "password": "dileep124",
+      "select": "User",
+      "id": 3
+    },
+    {
+      "user": "jyoshna",
+      "password": "jyo12345",
+      "select": "User",
+      "id": 4
+    },
+    {
+      "user": "venky",
+      "password": "venky123",
+      "select": "User",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

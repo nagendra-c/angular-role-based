@@ -1,0 +1,23 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)" >
+    <div>
+        <label class="form-label">Username</label>
+        <input type="text" formControlName="user" required class="form-control" placeholder="name">
+    </div>
+    <div>
+        <label class="form-label">Password</label>
+        <input type="password" formControlName="password" required class="form-control">
+    </div>
+    <div>
+        <label class="form-label">Select Customer</label>
+            <select class="form-select" formControlName="select">
+                <option selected>Open this select menu</option>
+                <option>User</option>
+                <option>Admin</option>
+            </select>
+    </div>
+    <div class="my-5">
+        <button class="btn btn-primary" type="submit" (click)="onLogin()"
+        [disabled]="loginForm.invalid"
+         [ngClass]="loginForm.invalid ? 'btn-danger' : 'btn-sucess'">Login</button>
+    </div>
+</form>

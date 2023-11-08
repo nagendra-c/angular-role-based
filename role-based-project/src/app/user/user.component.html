@@ -1,0 +1,15 @@
+<div class="container">
+    <nav>
+      <ul>
+        <li><a routerLink="user-dashboard">User</a></li>
+        <li><a routerLink="admin">Admin</a></li>
+      </ul>
+    </nav>
+    <section>
+        <p>user works!</p>
+        <button (click)="fetchUsersApi()" class="btn btn-primary">Get Api</button>
+        <button type="button" (click)="logoutUser">Logout</button>
+        <router-outlet></router-outlet>
+    </section>
+  </div>
+  
